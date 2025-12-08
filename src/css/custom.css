@@ -1,0 +1,133 @@
+/**
+ * Docusaurus v3 Theme customizations for the Physical AI course.
+ * Theme: Robotics Pro (Dark by Default)
+ * Using modern CSS variables and a dark-first approach.
+ */
+
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@400&family=Fira+Code&display=swap');
+
+/* Root variable definitions for the entire application */
+:root {
+  /*
+    Color Palette (Robotics Pro Theme)
+    Source: GEMINI.md
+  */
+  /* Primary Colors */
+  --ifm-color-primary: #00D9FF;           /* Electric Cyan */
+  --ifm-color-primary-dark: #00c3e6;
+  --ifm-color-primary-darker: #00b7d9;
+  --ifm-color-primary-darkest: #0099b3;
+  --ifm-color-primary-light: #1adfff;
+  --ifm-color-primary-lighter: #2de2ff;
+  --ifm-color-primary-lightest: #50e9ff;
+
+  --ifm-color-secondary: #9333EA;         /* Deep Purple */
+  --ifm-color-accent: #F59E0B;             /* Amber Gold */
+
+  /* Simplified variables for component styling */
+  --primary: var(--ifm-color-primary);
+  --secondary: var(--ifm-color-secondary);
+  --accent: var(--ifm-color-accent);
+
+  --background: #0F172A;        /* Slate 900 - Note: Applied in html[data-theme='dark'] */
+  --surface: #1E293B;           /* Slate 800 - Note: Applied in html[data-theme='dark'] */
+  --surface-variant: #334155;   /* Slate 700 */
+
+  --text-primary: #F1F5F9;      /* Slate 100 */
+  --text-secondary: #CBD5E1;    /* Slate 300 */
+  --text-muted: #94A3B8;        /* Slate 400 */
+
+  /* Semantic UI Colors */
+  --ifm-color-success: #10B981;            /* Emerald 500 */
+  --ifm-color-warning: #F59E0B;            /* Amber 500 */
+  --ifm-color-danger: #EF4444;              /* Red 500 */
+  --ifm-color-info: #3B82F6;               /* Blue 500 */
+
+  /* Simplified Semantic variables */
+  --success: var(--ifm-color-success);
+  --warning: var(--ifm-color-warning);
+  --error: var(--ifm-color-danger);
+  --info: var(--ifm-color-info);
+
+  /* Code Block Colors */
+  --code-bg: #1E1E1E;
+  --code-text: #D4D4D4;
+
+  /*
+    Typography System
+    Source: GEMINI.md
+  */
+  --ifm-font-family-base: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --ifm-font-family-monospace: 'Fira Code', 'JetBrains Mono', 'Consolas', monospace;
+  --ifm-heading-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --ifm-font-weight-base: 400;
+  --ifm-heading-font-weight: 700;
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.7;
+  --ifm-code-font-size: 0.9rem;
+}
+
+/*
+  Since we are dark-mode by default, we apply background and text colors
+  directly to the `html` tag. Docusaurus's `data-theme='dark'` selector
+  is used to ensure overrides apply correctly within the framework's context.
+*/
+html[data-theme='dark'] {
+  /* Background Colors */
+  --ifm-background-color: #0F172A;           /* Slate 900 */
+  --ifm-background-surface-color: #1E293B;  /* Slate 800 */
+
+  /* Text Colors */
+  --ifm-font-color-base: #F1F5F9;           /* Slate 100 */
+  --ifm-font-color-secondary: #CBD5E1;     /* Slate 300 */
+  --ifm-font-color-muted: #94A3B8;         /* Slate 400 */
+
+  /* Link Colors */
+  --ifm-link-color: var(--ifm-color-primary);
+  --ifm-link-hover-color: var(--ifm-color-primary-light);
+}
+
+/*
+  UI Guidelines
+  Source: GEMINI.md
+  - Rounded corners, subtle shadows, smooth transitions, glassmorphism
+*/
+
+/* Card Styling with Glassmorphism Effect */
+.card {
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for the glass effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: all 200ms ease; /* Smooth transitions */
+
+  /* Glassmorphism background */
+  background: rgba(30, 41, 59, 0.7); /* Semi-transparent Slate 800 */
+  backdrop-filter: blur(10px); /* The blur effect */
+}
+
+.card:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Button Styling */
+.button {
+  border-radius: 6px; /* Rounded corners for buttons */
+  transition: all 200ms ease;
+}
+
+/* Code Block Styling */
+.prism-code-block {
+  background-color: #1E1E1E; /* VS Dark background */
+  border-radius: 8px;
+  border: none;
+}
+
+/* Highlighted line in code blocks */
+.docusaurus-highlighted-code-line {
+  background-color: rgba(255, 255, 255, 0.1); /* More visible highlight */
+  display: block;
+  margin: 0 -1rem;
+  padding: 0 1rem;
+}

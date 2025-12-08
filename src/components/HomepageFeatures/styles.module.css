@@ -1,0 +1,35 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.moduleCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  padding: 2rem;
+  background: rgba(30, 41, 59, 0.5); /* --surface with 50% opacity */
+  border: 1px solid hsla(188, 100%, 50%, 0.2);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 200ms ease;
+}
+
+.moduleCard:hover {
+  border-color: var(--primary);
+  color: var(--text-primary);
+  text-decoration: none;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 217, 255, 0.15); /* --primary with alpha */
+}
+
+.moduleCard h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
