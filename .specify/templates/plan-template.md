@@ -31,7 +31,12 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [ ] **Spec-Driven Development**: Does this feature have a clear, approved specification?
+- [ ] **Test-Driven Development**: Are there clear, testable acceptance criteria? Will tests be written before implementation?
+- [ ] **CI/CD**: Are there any special considerations for the CI/CD pipeline?
+- [ ] **Trunk-Based Development**: Is the proposed branching strategy compliant with trunk-based development?
+- [ ] **YAGNI**: Is the proposed scope limited to what is immediately necessary?
+- [ ] **KISS**: Is the proposed solution the simplest one that can work?
 
 ## Project Structure
 

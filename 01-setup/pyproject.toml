@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ai-native-book"
+version = "0.1.0"
+description = "A project to generate and render a book on AI-native development."
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.104.1"
+uvicorn = {extras = ["standard"], version = "^0.24.0"}
+jinja2 = "^3.1.2"
+pydantic = "^2.5.2"
+python-markdown = "^3.5.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

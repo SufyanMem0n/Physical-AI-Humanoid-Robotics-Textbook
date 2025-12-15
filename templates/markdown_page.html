@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - AI-NATIVE-BOOK</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="/book/01-Part-I-Foundations/01-Chapter-Physical-AI/01-Intro">Intro</a></li>
+                <li><a href="/book/01-Part-I-Foundations/01-Chapter-Physical-AI/02-Architecture">Architecture</a></li>
+                <li><a href="/book/02-Part-II-Modules/01-Module-Robotic-Nervous-System">Module 1: Robotic Nervous System</a></li>
+                <li><a href="/book/02-Part-II-Modules/02-Module-Digital-Twin">Module 2: Digital Twin</a></li>
+                <li><a href="/book/02-Part-II-Modules/03-Module-AI-Robot-Brain">Module 3: AI-Robot Brain</a></li>
+                <li><a href="/book/02-Part-II-Modules/04-Module-Vision-Language-Action">Module 4: Vision-Language-Action</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            {{ content|safe }}
+        </main>
+    </div>
+</body>
+</html>
