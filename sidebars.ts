@@ -15,6 +15,7 @@ const sidebars: SidebarsConfig = {
         id: 'Part-I-Foundations/intro',
       },
       items: [
+        'Part-I-Foundations/Week-1-Introduction-to-Physical-AI',
         'Part-I-Foundations/ROS-2/intro',
       ],
     },

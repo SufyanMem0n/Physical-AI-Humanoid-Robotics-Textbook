@@ -94,6 +94,15 @@ html[data-theme='dark'] {
   - Rounded corners, subtle shadows, smooth transitions, glassmorphism
 */
 
+/* Navbar with Glassmorphism */
+.navbar {
+  background: rgba(15, 23, 42, 0.8); /* Semi-transparent Slate 900 */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
 /* Card Styling with Glassmorphism Effect */
 .card {
   border-radius: 8px; /* Rounded corners */
@@ -125,7 +134,7 @@ html[data-theme='dark'] {
 }
 
 /* Highlighted line in code blocks */
-.docusaurus-highlighted-code-line {
+.docusaurus-highlighted-_code-line {
   background-color: rgba(255, 255, 255, 0.1); /* More visible highlight */
   display: block;
   margin: 0 -1rem;

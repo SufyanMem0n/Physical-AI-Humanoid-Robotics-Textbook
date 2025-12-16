@@ -4,10 +4,14 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 8rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: radial-gradient(at top, hsla(195, 100%, 50%, 0.15), transparent 40%),
+              radial-gradient(at bottom, hsla(279, 79%, 56%, 0.1), transparent 50%),
+              var(--background);
+  border-bottom: 1px solid hsla(188, 100%, 50%, 0.2);
 }
 
 @media screen and (max-width: 996px) {

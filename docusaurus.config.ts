@@ -10,14 +10,19 @@ const config: Config = {
   // Set the production url of your site here
   url: 'https://SufyanMem0n.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
-  baseUrl: '/Physical-AI-Humanoid-Robotics-Textbook/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   organizationName: 'SufyanMem0n', // Usually your GitHub org/user name.
   projectName: 'Physical-AI-Humanoid-Robotics-Textbook', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   i18n: {
     defaultLocale: 'en',
